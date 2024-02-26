@@ -1,5 +1,5 @@
 function Graph(options) {
-    const { id, width = 300, height = 300, WIN, callbacks } = options;
+    const { id, width = 300, height = 300, WIN, callbacks = {} } = options;
     let canvas;
     if (id) {
         canvas = document.getElementById(id);

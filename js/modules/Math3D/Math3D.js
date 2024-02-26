@@ -12,6 +12,9 @@ class Math3D {
     }
 
     ys(point) {
-        //дописать
+        const zs = this.WIN.CENTER.z;
+        const z0 = this.WIN.CAMERA.z;
+        const y0 = this.WIN.CAMERA.y;
+        return -(point.y - y0) / (point.z - z0) * (zs - z0) + y0;
     }
 }
