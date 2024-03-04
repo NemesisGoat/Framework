@@ -1,0 +1,1 @@
+Surfaces.prototype.ellipse = (count = 20) => { }
